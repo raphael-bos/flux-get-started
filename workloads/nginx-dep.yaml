@@ -5,6 +5,8 @@ metadata:
   namespace: demo
   annotations:
     fluxcd.io/automated: "true"
+  labels:
+    app: MySuperApp
 spec:
   replicas: 1
   strategy:

@@ -25,13 +25,3 @@ spec:
         #     memory: "6Gi"
         ports:
         - containerPort: 80
-        volumeMounts:
-          - name: index-html
-            mountPath: /usr/share/nginx/html/
-      volumes:
-      - name: index-html
-        configMap:
-          name: ws1-index-html
-          items:
-            - key: index
-              path: index.html
